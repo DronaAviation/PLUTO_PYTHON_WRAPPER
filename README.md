@@ -1,11 +1,50 @@
-# PLUTO_PYTHON_WRAPPER
+
+# PLUTO PYTHON WRAPPER
 
 Pluto can be operated using Python for various tasks. Python is a versatile programming language known for its simplicity and readability.
+This is a simple python wrapper for your Pluto Drone so that you can write your own python script to make your drone move around. You can create your own projects by using the predefined functions.
+
+Go ahead and pull up the terminal and type: 
+```bash
+  git clone https://github.com/DronaAviation/Pluto_Drona_Python_Programming.git
+```
 
 ## Basic Flight Controls/ Commands:
 ![image](https://github.com/csaail/PLUTO_PYTHON_WRAPPER/assets/87662482/0c2c1fd0-8676-4b9c-ab87-48ce3d7c87af)
 Pitch => Forward/Back.<br/> Roll => Left/right.<br/>  Yaw => Left/right rotation around the centre of the frame.<br/>  Throttle => Changed altitude/speed.
 
+
+## Usage
+
+The `drone.py` script provides a wrapper class for controlling the drone. To use the wrapper, follow the instructions below:
+
+   ```python
+   from drone import drone
+   my_pluto = drone()
+
+   Connect The drone:  my_pluto.connect() 
+
+   my_pluto.trim(Roll, Pitch, Throttle, Yaw)
+
+   Trim the drone:  my_pluto.trim(Roll, Pitch, Throttle, Yaw)
+   #Example: my_pluto.trim(0, 0, 0, 0)
+  
+   Arm the drone:  my_pluto.arm()
+   Disarm the drone:  my_pluto.disarm()
+
+   Set throttle speed:  my_pluto.throttle_speed(value, Duration)
+   #Example: my_pluto.throttle_speed(5, 1) # Increase throttle speed by 5 for 1 second
+
+   Takeoff:  my_pluto.takeoff()
+   Land the drone:  my_pluto.land()
+
+  Roll, Pitch, Yaw:
+  Functions like roll_speed, pitch_speed, and yaw_speed are available for controlling the drone's movements.
+  my_pluto.roll_speed(50, 2)   # Increase roll speed by 50 for 2 sec
+  my_pluto.pitch_speed(50, 2)  # Increase pitch speed by 50 for 2 sec
+  my_pluto.yaw_speed(50, 2)    # Increase yaw speed by 50 for 2 sec
+  ```
+   
 
 ## Keyboard Controls:
 
@@ -29,7 +68,7 @@ To set up keyboard controls for your Pluto drone, follow these general steps:
 - Navigate to the Keyboard/linux_mac directory.
 - Run the ```keyboard.py``` script.
 
-![W](https://github.com/csaail/PLUTO_PYTHON_WRAPPER/assets/87662482/2ed955e3-dea1-4dfe-adc3-5ba69d3fdc1d)
+![W](https://github.com/DronaAviation/Pluto_Drona_Python_Programming/assets/16723168/0d2592a5-3f2b-4de1-8297-35a3505bb1ab)
 
 ## Joystick Controls Setup:
 
@@ -97,3 +136,5 @@ Feel free to customize these commands according to your preferences.
 
 ## Structure of the Wrapper:
 ![image](https://github.com/csaail/PLUTO_PYTHON_WRAPPER/assets/87662482/927591e8-36cd-4f2d-ae88-0016fa9479c9)
+
+## Frequently Faced Errors
