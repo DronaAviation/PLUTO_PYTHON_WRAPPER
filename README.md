@@ -45,7 +45,7 @@ The `drone.py` script provides a wrapper class for controlling the drone. To use
   my_pluto.yaw_speed(50, 2)    # Increase yaw speed by 50 for 2 sec
   ```
 ## Example: Takeoff and land
-```
+```python
 from drone import drone
 drone=drone()
 drone.connect()
