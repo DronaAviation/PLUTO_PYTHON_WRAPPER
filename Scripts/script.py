@@ -1,5 +1,5 @@
-import sys, os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from Utils import path  
+path()
 
 from src.drone import drone
 
