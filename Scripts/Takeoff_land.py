@@ -1,4 +1,7 @@
-from drone import drone
+from Utils import path  
+path()
+
+from src.drone import drone
 drone=drone()
 drone.connect()
 #trim(Roll,Pitch,Throttle,Yaw)
