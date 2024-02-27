@@ -6,7 +6,7 @@ This is a simple python wrapper for your Pluto Drone so that you can write your 
 
 Go ahead and pull up the terminal and type: 
 ```bash
-  git clone https://github.com/DronaAviation/Pluto_Drona_Python_Programming.git
+  git clone https://github.com/DronaAviation/PLUTO_PYTHON_WRAPPER.git
 ```
 
 ## Basic Flight Controls/ Commands:
@@ -19,7 +19,9 @@ Pitch => Forward/Back.<br/> Roll => Left/right.<br/>  Yaw => Left/right rotation
 The `drone.py` script provides a wrapper class for controlling the drone. To use the wrapper, follow the instructions below:
 
    ```python
-   from drone import drone
+   from Utils import path  
+   path()
+   from src.drone import drone
    my_pluto = drone()
 
    Connect The drone:  my_pluto.connect() 
