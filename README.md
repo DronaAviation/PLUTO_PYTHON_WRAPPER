@@ -7,6 +7,7 @@ This is a simple python wrapper for your Pluto Drone so that you can write your 
 Go ahead and pull up the terminal and type: 
 ```bash
   git clone https://github.com/DronaAviation/PLUTO_PYTHON_WRAPPER.git
+  pip install requirements.txt
 ```
 
 ## Basic Flight Controls/ Commands:
