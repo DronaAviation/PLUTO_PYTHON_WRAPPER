@@ -1,7 +1,7 @@
 from Utils import path  
 path()
 
-from src.drona import drone
+from src.drona import pluto
 
 drone=pluto()
 drone.connect()
