@@ -14,7 +14,7 @@ RETRY_COUNT=3           # no of retries before getting required data
 MSP_ACC_CALIBRATION = 205
 MSP_MAG_CALIBRATION = 206
 
-class drone:
+class pluto:
     #def __init__(self, DroneIP="192.168.0.1", DronePort=9060): #default pluto settings
     def __init__(self, DroneIP="192.168.4.1", DronePort=23): #default pluto settings
         self.DRONEIP = DroneIP
